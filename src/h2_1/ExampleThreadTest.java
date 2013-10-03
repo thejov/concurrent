@@ -1,16 +1,17 @@
-package h2;
+package h2_1;
 
 import org.junit.Test;
 
 public class ExampleThreadTest {
 
 	@Test
-	public void test() {	
+	public void test() {
 		Thread threadA = this.startThread("threadA");
 		Thread threadB = this.startThread("threadB");
 		
-		this.waitToFinish(threadA);		
-		this.waitToFinish(threadB); 
+		this.waitToFinish(threadA);
+		this.waitToFinish(threadB);
+		
 		System.out.println("After executing both threads.");		
 	}
 	
